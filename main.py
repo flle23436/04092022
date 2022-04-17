@@ -59,8 +59,18 @@ def divide_by_zero():
     except ZeroDivisionError:
         print("The divisor cannot be zero")
 
+def fibonacci_number(number):
+    counter = 0;
+    n1 = 0;
+    n2 = 1;
+    while counter < number:
+        print("The " + str(counter+1) + "th term is " + str(n1))
+        sumNumber = n1 + n2;
+        n1 = n2;
+        n2 = sumNumber;
+        counter = counter + 1;
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    #draw_heart('Winston')
-    divide_by_zero()
+    fibonacci_number(6)
