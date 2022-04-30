@@ -34,10 +34,16 @@ def draw_cat(name):
     print('  This is a lovely cat drew by', name)
 
 
-def calculate_add():
-    a = 6;
-    b = 9;
+def calculate_add(a, b):
     return a + b
+
+
+def calculate_multiply(c, d):
+    return c * d
+
+
+def calculate_multiple_threenumber(a, b, c):
+    return a * b * c
 
 
 def draw_heart(name):
@@ -52,15 +58,20 @@ def draw_heart(name):
 
 
 def divide_by_zero():
-    number1 = 5
+    number1 = 99
     number2 = 0
+
     try:
-        return number1 / number2
+        return number1 * 1.0 / number2
     except ZeroDivisionError:
         print("The divisor cannot be zero")
 
 
+def calculate_divide(a, b):
+    return a / b
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    #draw_heart('Winston')
-    divide_by_zero()
+    print(divide_by_zero())
+
