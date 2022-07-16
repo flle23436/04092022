@@ -4,16 +4,16 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 def simpleforloop():
-    primes = [2, 3, 5, 7]
-    for prime in primes:
-        print(prime)
+    composites = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20]
+    for composite in composites:
+        print(composite)
 
 def loopusingrange():
     for x in range(5):
         print(x)
 
 def loopusingrange2():
-    for x in range(3, 6):
+    for x in range(4, 20):
         print(x)
 
 def loopusingrangeskipcount():
@@ -22,14 +22,14 @@ def loopusingrangeskipcount():
 
 def whileloop():
     count = 0
-    while count < 5:
+    while count <= 5:
         print(count)
         count += 1
 
 def whileloop2():
-    for x in range(10):
-        # Check if x is even
-        if x % 2 == 0:
+    for x in range(30):
+        # Check if x is divisible by 5
+        if x % 5 == 0:
           print(x)
 
 def infiniteloop():
@@ -47,4 +47,4 @@ def whileloopwithbreak():
             break
     # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    whileloopwithbreak()
+   simpleforloop()
