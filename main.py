@@ -1,6 +1,6 @@
 # This is a sample Python script.
 
-def printoddorevent(number):
+def printoddoreven(number):
     if number % 2 == 0:
         print("n is even")
     else:
