@@ -1,10 +1,11 @@
 # This is a sample Python script.
+import math
 
 def printoddoreven(number):
     if number % 2 == 0:
-        print("n is even")
+        print(str(number) + " is even")
     else:
-        print("n is odd")
+        print(str(number) + " is odd")
 
 def comparenumber(number1, number2):
     if number1 == number2:
@@ -15,9 +16,11 @@ def comparenumber(number1, number2):
         print("number1 is smaller than number2")
 
 def whatismygrade(grade):
-    if grade >= 80:
+    if grade >= 90:
+        print("Bravo, you have earned an A+")
+    elif grade >= 80 and grade < 90:
         print("Congratulations, you have earned an A")
-    elif grade >= 65:
+    elif grade >= 65 and grade < 80:
         print("Good job, you have earned a B. Keep going")
     elif grade >= 50:
         print("You have earned a C. There is much room to improve.")
@@ -35,8 +38,9 @@ def numbers_to_strings(argument):
         # value of passed argument if it is present
         # in dictionary otherwise second argument will
         # be assigned as default value of passed argument
-        return switcher.get(argument, "nothing")
+        return switcher.get(argument, "There is no such key as " + str(argument))
 
+'''
 def whatistheday(day):
    match day:
       case 1:
@@ -45,10 +49,12 @@ def whatistheday(day):
           return "It is Tuesday"
       case 3:
           return "It is Wednesday"
-
+      case 4:
+          return "It is Thursday"
+'''
 
 
 
     # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-   print(whatistheday(0))
+   print("Hello World")
